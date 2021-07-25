@@ -14,10 +14,6 @@ const userSchema = new Schema(
             unique: true,
             match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address']
         },
-        thoughts: {
-            type: Date,
-            default: Date.now,
-        },
         thoughts: [
             {
                 type: Schema.Types.ObjectId,
@@ -40,7 +36,6 @@ const userSchema = new Schema(
     }
 );
 
-
 //virtuals first then exporting process
 // get total count of comments and replies on retrieval
 userSchema.virtual('friendCount').get(function () {
@@ -51,8 +46,5 @@ userSchema.virtual('friendCount').get(function () {
 // create the user model using the userSchema
 const User = model('User', userSchema);
 
-
 // export the user model
 module.exports = User;
-
-
