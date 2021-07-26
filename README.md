@@ -6,6 +6,11 @@ A REST API for a social media app. Built with Express, Mongoose, and MongoDB.
 ## User Story
 As a social media startup, I want an API for my social network that uses a NoSQL database so that my website can handle large amounts of unstructured data.
 
+## Packages
+- express
+- Mongoose
+- moment
+
 ## Usage
 
 1. Make sure you have MongoDB installed
@@ -44,3 +49,8 @@ As a social media startup, I want an API for my social network that uses a NoSQL
 
 - Add a reaction: PUT /api/thoughts/:id/reactions
 - Delete a reaction: DELETE /api/thoughts/:id/reactions
+
+## Questions
+
+If you have questions, email me at salask.0104@gmail.com or reach out on GitHub @ salask24.
+
