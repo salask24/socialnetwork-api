@@ -25,31 +25,39 @@ As a social media startup, I want an API for my social network that uses a NoSQL
 - Thought 
 - Reaction
 
+
+## DEMO
+
+(Part 1) https://drive.google.com/file/d/1DgoFdgecTt8qkuEmHOEo03O9oCDGPeBN/view?usp=sharing
+
+(Part 2) https://drive.google.com/file/d/1RRVrWUrRXM27XotdY21A7q4iBa6vXCTB/view?usp=sharing
+
+
 ## How to test in Insomnia (Endpoints)
 
 ### User
 
-- Get all users: GET /api/users
-- Create a user: POST /api/users
-- Get user by ID: GET /api/users/:id
-- Update a user: PUT /api/users/:id
-- Delete a user: DELETE /api/users/:id
-- Add a friend: PUT /api/users/:userId/friends/:friendId
-- Delete a friend: DELETE /api/users/:userId/friends/:friendId
+- Get all users: GET /api/user
+- Create a user: POST /api/user
+- Get user by ID: GET /api/user/:id
+- Update a user: PUT /api/user/:id
+- Delete a user: DELETE /api/user/:id
+- Add a friend: PUT /api/user/:userId/friends/:friendId
+- Delete a friend: DELETE /api/user/:userId/friends/:friendId
 
 ### Thought
 
-- Get all thoughts: GET /api/thoughts
-- Create a thought: POST /api/thoughts
-- Get thought by ID: GET /api/thoughts/:id
-- Update a thought: PUT /api/thoughts/:id
-- Delete a thought: DELETE /api/thoughts/:id
+- Get all thoughts: GET /api/thought
+- Create a thought: POST /api/thought
+- Get thought by ID: GET /api/thought/:id
+- Update a thought: PUT /api/thought/:id
+- Delete a thought: DELETE /api/thought/:id
 
 
 ### Reaction
 
-- Add a reaction: PUT /api/thoughts/:id/reactions
-- Delete a reaction: DELETE /api/thoughts/:id/reactions
+- Add a reaction: PUT /api/thought/:id/reactions
+- Delete a reaction: DELETE /api/thought/:id/reactions
 
 ## Questions
 
