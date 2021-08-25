@@ -8,7 +8,8 @@ As a social media startup, I want an API for my social network that uses a NoSQL
 
 ## Packages
 - express
-- Mongoose
+- Mongoose ODM
+- MongoDB
 - moment
 
 ## Usage
